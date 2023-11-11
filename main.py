@@ -1,4 +1,5 @@
-import ruble
+import mainey
+#подключаем готовую схему чисел через созданный файл
 
 em_num = int ( input ( 'Число сотруднников:  ' ) )
 summ = 0
@@ -31,7 +32,7 @@ for i in range( em_num ):
 for i in range( em_num ):
     index = price_list.index( min ( price_list ) )
     ind_list_b.append( index )
-    price_list[ index ] = 10 ** 10
+    price_list[ index ] = 10**10
     
 #Поиск для каждого i-го в паре списков с индексами нужный индекс такси
 print('Такси для клиента 1, 2, 3, ...:')
@@ -45,4 +46,4 @@ for i in range( em_num ):
 #вывод итоговой суммы
 print(summ)
 print('Итоговая сумма:')
-ruble.out(summ)
+mainey.out(summ)
